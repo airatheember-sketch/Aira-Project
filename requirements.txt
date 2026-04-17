@@ -1,0 +1,33 @@
+# Core
+fastapi[all]
+uvicorn[standard]
+python-dotenv
+httpx
+
+# Auth
+python-jose[cryptography]
+bcrypt
+passlib[bcrypt]
+
+# Database
+sqlalchemy
+
+# AI / LLM
+groq
+ollama
+
+# Vector Memory
+chromadb
+
+# Cache / PubSub
+redis
+
+# WebSockets (included in fastapi[all] but explicit is better)
+websockets
+
+# Pydantic (pin to v2)
+pydantic>=2.0
+
+# TTS (Piper runs as subprocess, just need audio utils)
+soundfile
+numpy
